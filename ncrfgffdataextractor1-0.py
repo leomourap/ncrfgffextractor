@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[15]:
-
-
 """ BEFORE THE START, YOU MUST REMOVE THE GFF STANDARD HEADER AND INPUT A NEW ONE:
 
 Cromossomo    Genbank    regiao    pbinicio    pbfim    .    +    .    annotation
@@ -22,18 +19,10 @@ var2 = df.iloc[:,3].tolist() #sequence array beginning base pair.
 
 var3 = df.iloc[:,4].tolist() #sequence array ending base pair.
 
-
-# In[16]:
-
-
 #open annotation.GFF file;
 df2 = pd.read_table("GCA_019721115.1_AMEX_1.1_genomic.GFF") #remember, it must have the new columns names!
 
 df2 = df2.dropna(how="any", axis=0) #treatment for deleting lines with empty values.
-
-
-# In[20]:
-
 
 #extraction of data:
 df5 = pd.DataFrame() #creating the final dataframe (empty by now)
@@ -46,6 +35,7 @@ for i in range(len(var1)):
     #here you can change the additional downstream/upstream base pair portion for extraction.
     df5 = df5.append(df4)
 
+#remove duplicated results - two or more arrays close would generate that.
 df5 = df5.drop_duplicates(subset=None, keep='first', inplace=False, ignore_index=False)
 
 float_col = df5.select_dtypes(include=['float64']) #This will select float columns and store it in a var. for the loop below:
@@ -53,10 +43,3 @@ for col in float_col: #loop to transform the columns "pbinicio" and "pbfim" into
     df5[col] = df5[col].astype('int64')
 
 df5.to_csv('GFFextractor1.csv', index=False) #save the final dataframe to an csv.
-
-
-# In[ ]:
-
-
-
-
