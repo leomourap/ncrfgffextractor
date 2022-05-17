@@ -2,6 +2,8 @@
 
 The script is intended to extract portions of a  GFF annotation file based on the summary output from Noise Cancelling Repeat Finder (https://github.com/makovalab-psu/NoiseCancellingRepeatFinder).
 
+Usage: ncrfgffextractor1-1.py NCRFsummaryfile GFFfile output.csv
+
 BEFORE THE START, YOU MUST REMOVE THE GFF STANDARD HEADER AND INPUT A NEW ONE (tab delimited!!!):
 
 Cromossomo    Genbank    regiao    pbinicio    pbfim    .    +    .    annotation
