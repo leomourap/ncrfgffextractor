@@ -1,6 +1,6 @@
 # **ncrfgffextractor**
 
-The script 
+The script is intended to extract portions of a  GFF annotation file based on the summary output from Noise Cancelling Repeat Finder (https://github.com/makovalab-psu/NoiseCancellingRepeatFinder).
 
 BEFORE THE START, YOU MUST REMOVE THE GFF STANDARD HEADER AND INPUT A NEW ONE (tab delimited!!!):
 
