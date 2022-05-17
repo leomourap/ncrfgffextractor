@@ -4,7 +4,7 @@
 import pandas as pd
 import sys
 
-print("\nUsage: ncrfgffextractor1-1.py NCRFsummaryfile GFFfile output.csv [PREFIX]\n")
+print("\nUsage: ncrfgffextractor1-1.py NCRFsummaryfile GFFfile output.csv \n")
 
 print("remember!!! BEFORE THE START, YOU MUST REMOVE THE GFF STANDARD HEADER AND INPUT A NEW ONE:")
 print("Cromossomo    Genbank    regiao    pbinicio    pbfim    .    +    .    annotation(tabdelimited)")
