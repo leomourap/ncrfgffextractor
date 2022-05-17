@@ -43,3 +43,4 @@ for col in float_col: #loop to transform the columns "pbinicio" and "pbfim" into
     df5[col] = df5[col].astype('int64')
 
 df5.to_csv('GFFextractor1.csv', index=False) #save the final dataframe to an csv.
+
