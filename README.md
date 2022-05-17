@@ -1,5 +1,7 @@
 # **ncrfgffextractor**
 
+The script 
+
 BEFORE THE START, YOU MUST REMOVE THE GFF STANDARD HEADER AND INPUT A NEW ONE (tab delimited!!!):
 
 Cromossomo    Genbank    regiao    pbinicio    pbfim    .    +    .    annotation
