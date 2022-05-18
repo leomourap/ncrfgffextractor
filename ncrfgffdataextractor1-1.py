@@ -53,4 +53,4 @@ for col in float_col: #loop to transform the columns "pbinicio" and "pbfim" into
 try:
     df5.to_csv(sys.argv[3], index=False) #save the final dataframe to an csv.
 except:
-    df5.to_csv(input("outputfile.csv"), index=False)
+    df5.to_csv(input("Output File: "), index=False)
